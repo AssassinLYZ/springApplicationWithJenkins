@@ -9,11 +9,14 @@ pipeline {
         }
         stage('Build') {
             steps {
+                script{
+                    chmod +x gradlew
+                }
                 script {
                     // on windows
                     // bat './gradlew.bat build'
                     // on unix
-                    chmod +x gradlew
+
                     sh './gradlew build'
                 }
             }
