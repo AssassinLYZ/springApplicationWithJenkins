@@ -10,7 +10,10 @@ pipeline {
         stage('Build') {
             steps {
                 script {
+                    // on windows
                     bat './gradlew.bat build'
+                    // on unix
+                    // sh './gradlew build'
                 }
             }
         }
