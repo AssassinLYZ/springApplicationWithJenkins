@@ -13,7 +13,8 @@ pipeline {
                     // on windows
                     // bat './gradlew.bat build'
                     // on unix
-                     sh './gradlew build'
+                    chmod +x gradlew
+                    sh './gradlew build'
                 }
             }
         }
