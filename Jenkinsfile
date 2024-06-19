@@ -11,9 +11,9 @@ pipeline {
             steps {
                 script {
                     // on windows
-                    bat './gradlew.bat build'
+                    // bat './gradlew.bat build'
                     // on unix
-                    // sh './gradlew build'
+                     sh './gradlew build'
                 }
             }
         }
